@@ -191,7 +191,7 @@ st.write("Generate creative text sequences using an LSTM neural network trained 
 # ==========================================
 # HELP SECTION
 # ==========================================
-with st.expander("❓ How to Use This App", expanded=True):
+with st.expander("❓ How to Use This App", expanded=False):
     col1, col2 = st.columns(2)
     
     with col1:
