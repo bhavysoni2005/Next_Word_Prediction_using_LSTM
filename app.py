@@ -46,7 +46,7 @@ def load_resources():
     try:
         # Load model from H5 format (deployment compatible)
         # H5 is backward compatible across TensorFlow versions
-        if not os.path.exists("lstm_model.h5"):
+        if not os.path.exists("lstm_model.h5",compile=False):
             errors.append("❌ lstm_model.h5 not found")
             return None, None, None
             
