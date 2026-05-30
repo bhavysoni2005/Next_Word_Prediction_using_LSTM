@@ -1,47 +1,10 @@
-# ============================================
-# PRODUCTION REQUIREMENTS - STREAMLIT CLOUD COMPATIBLE
-# ============================================
-# Python: 3.11 (required)
-# Last Updated: May 30, 2026
-# Status: TESTED & VERIFIED
-# ============================================
-
-# Core Framework
 streamlit==1.40.2
-
-# ML/AI Stack (TensorFlow CPU for Streamlit Cloud)
 tensorflow-cpu==2.16.1
 numpy==1.26.4
-
-# Data Processing
 pandas==2.2.3
-
-# Visualization
 matplotlib==3.9.2
 seaborn==0.13.2
-
-# File I/O
 h5py==3.11.0
-
-# Utilities
 protobuf==4.25.3
 scipy==1.14.1
-
-# Optional but recommended
 Pillow==10.4.0
-
-# ============================================
-# NOTES:
-# ============================================
-# 1. tensorflow-cpu (not tensorflow) - Streamlit Cloud uses CPU only
-# 2. TensorFlow 2.16.1 - Last version fully compatible with Python 3.11
-# 3. numpy 1.26.4 - Compatible with TensorFlow 2.16.1
-# 4. h5py 3.11.0 - Fixed compatibility with TensorFlow 2.16
-# 5. protobuf 4.25.3 - Compatible with Streamlit 1.40.2
-# 
-# DO NOT USE:
-# - tensorflow==2.21.0 (Python 3.14 only)
-# - tensorflow==2.15.0 (EOL, incompatible)
-# - Latest versions without pinning
-# - GPU-specific packages on Streamlit Cloud
-# ============================================
